@@ -1,1 +1,16 @@
+static void Main()
+    {
+        string str1 = "Hello";
+        string str2 = "Hello";
+        
+        // 使用 Equals() 方法比較字串是否相等
+        if (str1.Equals(str2))
+        {
+            Console.WriteLine("字串相等");
+        }
+        else
+        {
+            Console.WriteLine("字串不相等");
+        }
+    }
 
