@@ -1,1 +1,10 @@
-
+static void Main()
+    {
+        string userInput = "Hello! ##$% World!";
+        
+        // 假設我們要移除從索引位置 5 開始的所有無效字符
+        string cleanedInput = userInput.Remove(5);  // 從索引 5 開始移除所有字符
+        
+        // 顯示結果
+        Console.WriteLine($"Cleaned input: {cleanedInput}");
+    }
