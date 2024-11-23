@@ -1,1 +1,15 @@
+static void Main()
+    {
+		Console.Write("請輸入您的電子郵件: ");
+        string email = Console.ReadLine();
+        bool isGmail = email.EndsWith("@gmail.com");
 
+        if (isGmail)
+        {
+            Console.WriteLine("您的電子郵件是來自 Gmail.");
+        }
+        else
+        {
+            Console.WriteLine("您的電子郵件不是來自 Gmail.");
+        }
+}
