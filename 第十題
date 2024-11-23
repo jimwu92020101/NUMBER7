@@ -1,1 +1,16 @@
+static void Main()
+    {
+        // 假設有一個數字列表
+        string[] numbers = { "5", "100", "25", "3000" };
+
+        // 顯示標題
+        Console.WriteLine("Number Report:");
+        
+        // 使用 PadLeft() 方法對齊每個數字，使其長度達到 5
+        foreach (string number in numbers)
+        {
+            string paddedNumber = number.PadLeft(5);  // 使每個數字長度為 5，左邊填充空格
+            Console.WriteLine(paddedNumber);
+        }
+    }
 
