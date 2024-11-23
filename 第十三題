@@ -1,1 +1,11 @@
-
+static void Main()
+    {
+		// 提示使用者輸入字串
+        Console.WriteLine("請輸入一段文字：");
+        string str = Console.ReadLine(); // 讀取使用者輸入的字串
+        // 將字串轉換為字元陣列
+        char[] charArray = str.ToCharArray();
+        char[] illegalChars = { '@', '#', '$', '%' };
+        bool hasIllegal = charArray.Any(ch => illegalChars.Contains(ch));
+        Console.WriteLine($"包含非法字元: {hasIllegal}");
+    }
