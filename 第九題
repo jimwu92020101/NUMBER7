@@ -1,1 +1,11 @@
-
+static void Main()
+    {
+        string username = "user123";  // 用戶輸入的本地部分
+        string domain = "@gmail.com"; // 域名部分
+        
+        // 使用 Insert() 方法在適當位置插入域名
+        string email = username.Insert(username.Length, domain);  // 在字串末尾插入域名
+        
+        // 顯示結果
+        Console.WriteLine($"User's email: {email}");
+    }
