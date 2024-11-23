@@ -1,1 +1,14 @@
+static void Main()
+    {
+string[] names = { "Alice", "Bob", "Charlie", "Diana" };
+  int[] ages = { 30, 25, 35, 28 };
 
+  // 顯示標題
+  Console.WriteLine("Name".PadRight(15) + "Age");
+
+  // 顯示員工資料
+  for (int i = 0; i < names.Length; i++)
+  {
+      Console.WriteLine(names[i].PadRight(15) + ages[i]);
+  }
+    }
