@@ -1,1 +1,9 @@
+static void Main()
+    {
+        Console.Write("請輸入訂單編號: ");
+        string orderNumber = Console.ReadLine();
+        string shortCode = orderNumber.Substring(0,5);
+        Console.WriteLine("訂單編號的簡短代碼是："+ shortCode);
+        Console.ReadLine();
+    }
 
