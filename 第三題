@@ -1,1 +1,13 @@
+static void Main()
 
+    {
+
+        string mixedName = "JaNe DoE";
+
+        string upperName = mixedName.ToUpper();
+
+
+
+        Console.WriteLine($"統一為大寫: {upperName}");
+
+    }
