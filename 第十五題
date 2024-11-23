@@ -1,1 +1,10 @@
-
+static void Main()
+    {
+        string text = "This is a gr8 example. I hope you like it. gr8 work!";
+        
+        // 使用 Replace() 方法將 'gr8' 替換成 'great'
+        string correctedText = text.Replace("gr8", "great");
+        
+        // 顯示修改後的文字
+        Console.WriteLine("Corrected Text: ");
+        Console.WriteLine(correctedText);
