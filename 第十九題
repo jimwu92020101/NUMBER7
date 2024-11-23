@@ -1,1 +1,13 @@
+static void Main()
+{
+    // 用戶輸入的名字（包含前後空白）
+    Console.Write("請輸入用戶名稱: ");
+    string userName = Console.ReadLine();
+    // 使用 Trim() 方法，移除名字前後的空白字元
+    string cleanUserName = userName.Trim();
+    // 顯示清理後的名字
+    Console.WriteLine("清理後的名字是：");
+    Console.WriteLine($"'{cleanUserName}'");
+    Console.ReadLine();
+}
 
