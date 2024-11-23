@@ -1,1 +1,17 @@
+static void Main()
+ {
+     Console.Write("請輸入商品名稱: ");
+     string source = Console.ReadLine();
+     Console.Write("請輸入要複製的字數: ");
+     int numberOfChars = int.Parse(Console.ReadLine());
+     if (numberOfChars > source.Length)
+     {
+         Console.WriteLine("錯誤: 複製的字數超過字串的長度。");
+         return;
+     }
+     char[] destination = new char[numberOfChars];
+     source.CopyTo(0, destination, 0, numberOfChars);
+     Console.WriteLine(new string(destination));
+     Console.ReadLine();
+ }
 
