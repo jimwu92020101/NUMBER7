@@ -1,1 +1,15 @@
+static void Main()
 
+    {
+
+        Console.WriteLine("請輸入您的名字:");
+
+        string userInput = Console.ReadLine();  // 用戶輸入
+
+        string copiedInput = string.Copy(userInput);  // 複製用戶輸入
+
+
+
+        Console.WriteLine($"複製的名字是: {copiedInput}");  // 顯示複製的名字
+
+    }
