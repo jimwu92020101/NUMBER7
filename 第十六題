@@ -1,1 +1,15 @@
-
+static void Main()
+    {
+        string cities = "New York,Los Angeles,Chicago,Houston,Phoenix";
+        
+        // 使用 Split() 方法將字串根據逗號分割成城市名稱陣列
+        string[] cityList = cities.Split(',');
+        
+        // 遍歷每個城市並計算長度
+        foreach (string city in cityList)
+        {
+            int length = city.Length;
+            // 顯示每個城市名稱及其長度
+            Console.WriteLine($"City: {city}, Length: {length}");
+        }
+    }
