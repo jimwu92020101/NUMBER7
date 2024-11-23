@@ -1,1 +1,7 @@
-
+static void Main()
+    {
+		Console.WriteLine("請輸入員工代號:");
+        string employeeCode =Console.ReadLine();
+        bool isValidCode = employeeCode.StartsWith("EMP");
+        Console.WriteLine(isValidCode ? "有效的員工代號" : "無效的員工代號");
+}
