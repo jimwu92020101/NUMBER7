@@ -1,1 +1,15 @@
+ static void Main()
+    {
+        Console.WriteLine("請輸入書籍標題:");
+        string bookTitle = Console.ReadLine();
+        Console.WriteLine("請輸入作者:");
+        string author = Console.ReadLine();
+        Console.WriteLine("請輸入出版年份:");
+        string publishYear = Console.ReadLine();
+        // 使用 string.Concat() 合併書籍資訊
+        string bookInfo = string.Concat("書名: ", bookTitle, "\n", "作者: ", author, "\n", "出版年份: ", publishYear);
+        Console.WriteLine("書籍資訊如下：");
+        Console.WriteLine(bookInfo);
+        Console.ReadLine();
+    }
 
