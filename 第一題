@@ -1,0 +1,14 @@
+static void Main()
+    {
+        string[] products = { "Banana", "Apple", "Orange", "Grapes" };
+
+        // 使用 Array.Sort 並提供比較方法來進行排序
+        Array.Sort(products, (x, y) => string.Compare(x, y));
+
+        // 顯示排序後的商品名稱
+        Console.WriteLine("Sorted Products:");
+        foreach (var product in products)
+        {
+            Console.WriteLine(product);
+        }
+    }
