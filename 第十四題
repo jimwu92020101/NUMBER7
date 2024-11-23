@@ -1,1 +1,11 @@
+static void Main()
 
+    {
+		string[] fruits = { "apple", "banana", "cherry" };
+        string displayText = string.Join(", ", fruits);
+
+        // 顯示清單內容
+        Console.WriteLine("以下是可選水果清單：");
+        Console.WriteLine(displayText);  // 顯示複製的名字
+
+    }
